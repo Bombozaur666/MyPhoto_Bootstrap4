@@ -23,3 +23,7 @@
     background-size: cover;
     color: white;
 }
+
+.bg-myphoto-dark .nav-tabs a {
+    color: white;
+}
