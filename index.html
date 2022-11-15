@@ -9,6 +9,49 @@
     <link rel="stylesheet" href="styles/myphoto.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">My Photo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#back">Main Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Profile <span class="caret"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Settings
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            Log Out
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container-fluid myphoto-section bg-myphoto-welcome">
         <div class="container">
             <div class="jumbotron">
@@ -17,7 +60,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid myphoto-section bg-myphoto-dark">
+
+    <div class="container-fluid myphoto-section bg-myphoto-dark" id="services">
         <div class="container">
             <div class="row">
                 <h3>Services</h3>
@@ -161,6 +205,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid myphoto-section bg-myphoto-light" id="gallery">
         <div class="container">
             <h3>
@@ -201,7 +246,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid myphoto-section bg-myphoto-dark">
+
+    <div class="container-fluid myphoto-section bg-myphoto-dark" id="about">
         <div class="container">
             <div class="row">
                 <h3>About Us</h3>
@@ -224,14 +270,14 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid myphoto-section bg-myphoto-light">
+
+    <div class="container-fluid myphoto-section bg-myphoto-light" id="contact">
         <div class="row">
             <h3>Contacts</h3>
         </div>
     </div>
 
     <footer>Footer</footer>
-
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
