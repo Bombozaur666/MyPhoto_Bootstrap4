@@ -59,6 +59,12 @@
         </div>
     </nav>
 
+    <div class="alert alert-danger alert-dismissible  fixed-top old-browser-alert">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong class="alert-heading">Old browser</strong>
+        We don't support this browser!
+    </div>
+
     <div class="modal" id="profile-modal" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -319,12 +325,17 @@
     </div>
 
     <div class="container-fluid myphoto-section bg-myphoto-light" id="contact">
-        <div class="row">
-            <h3>Contacts</h3>
-        </div>
+        <h3>Contacts</h3>
+        <form>
+
+        </form>
     </div>
 
-    <footer>Footer</footer>
+    <footer class="footer text text-center">
+        <p class="text-muted"><small>&copy; MyPhoto</small></p>
+        <p class="text-muted"><a href="#"><small>Term of Use</small></a></p>
+        <p class="text-muted"><a href="#"><small>About Us</small></a></p>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
