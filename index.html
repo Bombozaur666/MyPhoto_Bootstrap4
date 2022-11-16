@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/myphoto.css">
+    <link rel="stylesheet" href="statics/myphoto.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-myphoto">
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-expand-lg navbar-myphoto fixed-top">
         <a class="navbar-brand" href="#">My Photo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navigation">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav nav-pills mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="#back">Main Page</a>
                 </li>
@@ -34,6 +35,7 @@
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
+
             <ul class="navbar-nav pull-right">
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -55,6 +57,7 @@
             </ul>
         </div>
     </nav>
+
     <div class="modal" id="profile-modal" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -325,5 +328,6 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="statics/myphoto.js"></script>
 </body>
 </html>
