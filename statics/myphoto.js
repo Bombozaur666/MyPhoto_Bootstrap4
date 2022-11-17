@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
     $(".nav-link").on('click', function(evt) {
         evt.preventDefault();
         var offset = $(this.hash).offset();
@@ -8,4 +8,7 @@ $(document).ready(function() {
             });
         }
     });
+    if ($.browser.msie && $.browser.version <= 9) {
+        $('#unsupported-browser-alert').show()
+    }
 });
