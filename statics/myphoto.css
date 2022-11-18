@@ -137,3 +137,13 @@ footer a {
     margin-left: 2rem;
     margin-right: 1rem;
 }
+
+#services-events-content div {
+    display: none;
+}
+
+
+#service-events-content {
+    height: 15em;
+    overflow-y: scroll;
+}
