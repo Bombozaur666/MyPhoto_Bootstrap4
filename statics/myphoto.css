@@ -132,3 +132,8 @@ footer p {
 footer a {
     color: inherit;
 }
+
+#services-events .container {
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
