@@ -142,8 +142,14 @@ footer a {
     display: none;
 }
 
+#services-events-content div img{
+    margin-top: 0.5em;
+    margin-right: 1em;
+}
+
 
 #service-events-content {
     height: 15em;
     overflow-y: scroll;
+    width: 95%;
 }
