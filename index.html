@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="statics/myphoto.css">
     <link rel="stylesheet" href="statics/alert.css">
 </head>
+
 <body data-spy="scroll" data-target=".navbar">
     <nav class="navbar navbar-expand-lg navbar-myphoto fixed-top">
         <a class="navbar-brand" href="#">My Photo</a>
@@ -93,6 +94,20 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-success">Save changes</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade carousel-modal" id="carousel-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <img>
                 </div>
             </div>
         </div>
@@ -306,19 +321,19 @@
             <div id="gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
                 <div class="carousel-inner" role="listbox">
                     <div style="height: 400px" class="carousel-item active">
-                        <img class="d-block img-fluid" src="images/brazil.png">
+                        <img class="d-block img-fluid" src="images/brazil.png" data-modal-picture="#carousel-modal">
                         <div class="carousel-caption">
                             Brazil
                         </div>
                     </div>
                     <div style="height: 400px" class="carousel-item">
-                        <img class="d-block img-fluid" src="images/datsun.png">
+                        <img class="d-block img-fluid" src="images/datsun.png" data-modal-picture="#carousel-modal">
                         <div class="carousel-caption">
                             Datsun
                         </div>
                     </div>
                     <div style="height: 400px" class="carousel-item">
-                        <img class="d-block img-fluid" src="images/skydive.png">
+                        <img class="d-block img-fluid" src="images/skydive.png" data-modal-picture="#carousel-modal">
                         <div class="carousel-caption">
                             Skydiving
                         </div>
@@ -424,6 +439,7 @@
     <script src="node_modules/datatables/media/js/jquery.dataTables.min.js"></script>
     <script src="node_modules/datatables.net-bs4/js/dataTables.bootstrap4.js"></script>
     <script src="statics/myphoto.js"></script>
+    <script src="statics/carousel.js"></script>
     <script src="statics/alert.js"></script>
 </body>
 </html>
