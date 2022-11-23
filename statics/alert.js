@@ -59,4 +59,15 @@
 
     $(document).on('click.bs.alert.data-api', '[data-minimize="alert"]', Alert.prototype.minimize)
     $(document).on('click.bs.alert.data-api', '[data-expand="alert"]', Alert.prototype.expand)
+    $(window).on('load', function () {
+        $('[data-alert-animate]').each(function () {
+            let defaultAnimations = 'animated pulse infinite'
+            let $animations = $(this).attr('data-alert-animate')
+            if ($animations) {
+                $(this).addClass('animated ' + $animations)
+            } else {
+                $(this).addClass(defaultAnimations)
+            }
+        })
+    })
 }(jQuery);

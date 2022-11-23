@@ -1,5 +1,5 @@
 $(function() {
-    $(".nav-link").on('click', function(evt) {
+    $(".nav-link.move").on('click', function(evt) {
         evt.preventDefault();
         var offset = $(this.hash).offset();
         if (offset) {

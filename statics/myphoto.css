@@ -171,3 +171,11 @@ footer a {
 .size-lof4 {
     width: 25%;
 }
+
+.hide-before-animated {
+    visibility: hidden;
+}
+
+.hide-before-animated.animated {
+    visibility: visible;
+}

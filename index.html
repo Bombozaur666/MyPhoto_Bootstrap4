@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="statics/myphoto.css">
     <link rel="stylesheet" href="statics/alert.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" class="animated animate__fadeIn">
     <nav class="navbar navbar-expand-lg navbar-myphoto fixed-top">
         <a class="navbar-brand" href="#">My Photo</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
@@ -24,19 +26,19 @@
         <div class="collapse navbar-collapse" id="navigation">
             <ul class="navbar-nav nav-pills mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#back">Main Page</a>
+                    <a class="nav-link move hvr-underline-from-center" href="#back">Main Page</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link move hvr-underline-from-center" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link move hvr-underline-from-center" href="#gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link move hvr-underline-from-center" href="#about">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link move hvr-underline-from-center" href="#contact">Contact</a>
                 </li>
             </ul>
 
@@ -62,7 +64,7 @@
         </div>
     </nav>
 
-    <div class="alert alert-info alert-position">
+    <div class="alert alert-info alert-position hide-before-animated" data-alert-animate="bounceIn">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <a href="#" class="close minimize" data-minimize="alert" aria-label="minimize">_</a>
         <a href="#" class="close expand d-none" data-expand="alert" aria-label="expand">+</a>
@@ -210,7 +212,7 @@
                 <div role="tabpanel" class="tab-pane" id="services-testimonials">
                     <div class="container">
                         <div class="row">
-                            <div class="myphoto-testimonials-grid" data-columns>
+                            <div class="myphoto-testimonials-grid animated fadeIn" data-columns>
                                 <div class="myphoto-testimonial-column">
                                     <h6>Kokodaw</h6>
                                     <p>My first time here and had a ball. Great experience. Beautiful view! Perfect natural lighting and had use of equipment. Great place to shoot. My new place to be. :)</p>
@@ -232,8 +234,8 @@
                                     <p>I love FD studio. This place is like a home to me :). I use this studio a lot to shoot portraits, engagements, fashion and artworks. Great view from the roof to the skyscrapers. The Best and the cheapest photo studio in Down Town LA.</p>
                                 </div>
                                 <div class="myphoto-testimonial-column">
-                                    <h6>Alice</h6>
-                                    <p>Cudownie! Dokładnie tak to sobie wyobrażałam!</p>
+                                    <h6>Anonym</h6>
+                                    <p>The lady at the front desk helped me with setting up the light. I had a few questions and was humble in response. Definitely coming back</p>
                                 </div>
                                 <div class="myphoto-testimonial-column">
                                     <h6>Julia Shema</h6>
